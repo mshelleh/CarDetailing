@@ -362,32 +362,39 @@ amounts of pet hair and or pet accidents in the car. This level would also apply
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
-                                <h2 class="pb-4">Contact Us</h2>
-                                <div class="row g-4">
-                                    <div class="col-6 mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Fname</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John">
-                                    </div>
-                                    <div class="col-6 mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Lname</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Doe">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Phone</label>
-                                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+1234567890">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <button type="button" class="btn btn-dark">Send Message</button>
-                            </div>
+                            <!-- Contact Form using Formspree -->
+<form action="https://formspree.io/f/xvgrplbq" method="POST" class="col-xl-6">
+    <h2 class="pb-4">Contact Us</h2>
+
+    <div class="row g-4">
+        <div class="col-6 mb-3">
+            <label for="fname" class="form-label">Fname</label>
+            <input type="text" class="form-control" id="fname" name="first_name" placeholder="John" required>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="lname" class="form-label">Lname</label>
+            <input type="text" class="form-control" id="lname" name="last_name" placeholder="Doe" required>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+1234567890">
+    </div>
+
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-dark">Send Message</button>
+</form>
+
                         </div>
                     </div>
                 </div>
